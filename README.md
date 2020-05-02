@@ -31,7 +31,7 @@ git clone https://github.com/Hans-Jeiger/SpectatorDrones.git
 
 The plugin will now be available in your Unreal Engine project next time you open it. You can find it by clicking on the folder icon in your content browser and locating drone Content:
 
-![How to locate the plugin within your project](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/Resources/readme%20guide%20image.png?token=ALCTNAFKSFLL5EJGS4NHZLK6WZVC4)
+![How to locate the plugin within your project](https://media.githubusercontent.com/media/Hans-Jeiger/SpectatorDrones/master/rm_files/readme%20guide%20image.png?token=ALCTNAHMWCXG262BPRWX2CC6VVUCM)
 
 ### Simple implementation
 
@@ -50,7 +50,8 @@ This is a very simple example method to test the drone and check out its view.
 
 In your level blueprint, make an event looking like this:
 
-![How to locate the plugin within your project](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/Resources/readme%20level%20blueprint%20example.png?token=ALCTNABUKSDTSFT5PJY5HOC6WZ3FG)
+![How to locate the plugin within your project](https://media.githubusercontent.com/media/Hans-Jeiger/SpectatorDrones/master/rm_files/readme%20level%20blueprint%20example.png?token=ALCTNACNVJWHMLKZFB2JD7S6VVUD2)
 
 ## Customization
 
+The drone system works 
