@@ -54,4 +54,19 @@ In your level blueprint, make an event looking like this:
 
 ## Customization
 
-The drone system works 
+The drone system works by assigning POI actor components to the blueprints of actors that are relevant for filming.
+
+The POI system is built as follows:
+
+![POI system polymorphism chart](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/rm_files/POI%20chart.PNG?token=ALCTNAAN7HGAABPTAIZAROC6W2P6O)
+
+The Parent component is the parent of all the POI components you will be using.
+
+If you have an actor you want to be filmed by the drones, make the considerations:
+* Does the actor move around the map or not? 
+  * If it moves around, you should assign a BP_POI_Dynamic to it, as it updates its location each tick.
+  * If it does not, you should assign a BP_POI_Static, as it only updates location at Begin Play.
+* Will the actor be the primary focus for filming?
+  * If it is, it should be assigned a BP_POI_Subject component, as this can keep an updated list of other POIs relative to the actor which are relevant to keep in frame.
+* Does the POI need specific variables / functions to add functionality?
+  * If so, you can create a child actor component of the appropriate POI component and add any functionality you need.
