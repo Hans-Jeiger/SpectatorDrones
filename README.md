@@ -51,7 +51,7 @@ This is a very simple example method to test the drone and check out its view.
 
 In your level blueprint, make an event looking like this:
 
-![How to locate the plugin within your project](https://media.githubusercontent.com/media/Hans-Jeiger/SpectatorDrones/master/rm_files/readme%20level%20blueprint%20example.png?token=ALCTNACNVJWHMLKZFB2JD7S6VVUD2)
+![How to switch between cameras - simple](https://github.com/Hans-Jeiger/SpectatorDrones/blob/master/rm_files/readme%20level%20blueprint%20example.png?raw=true)
 
 ## Customization
 
@@ -61,7 +61,7 @@ The drone system works by assigning POI actor components to the blueprints of ac
 
 The POI system is built as follows:
 
-![POI system polymorphism chart](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/rm_files/POI%20chart.PNG?token=ALCTNAAN7HGAABPTAIZAROC6W2P6O)
+![POI system polymorphism chart](https://github.com/Hans-Jeiger/SpectatorDrones/blob/master/rm_files/POI%20chart.PNG?raw=true)
 
 The Parent component is the parent of all the POI components you will be using.
 
@@ -95,11 +95,11 @@ When you need to make a custom POI, you right click the appropriate POI blueprin
 
 BP_Drone_Controller is an AI Controller controlling the drone. When the drone is assigned a Subject POI it will fly around the subject, filming it. The drone also has a calculated midpoint, which the drone will try to keep within its frame. This midpoint is calculated from the other POIs which the Drone Master has deemed relevant for the Subject POI. It works as follows:
 
-![Rule of thirds grid](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/rm_files/3partsGrid.jpg?token=ALCTNACGCOMKLQP63YLLFJK6W6ZK6)
+![Rule of thirds grid](https://github.com/Hans-Jeiger/SpectatorDrones/blob/master/rm_files/3partsGrid.jpg?raw=true)
 
 This represents the camera view of the drone. In this example, we utilize a 3x3 grid to achieve a Rule of Thirds composition. The drone will move to keep the Subject POI along the green line and the calculated midpoint within the blue zone. The Subject POI and the midpoint will also be kept on opposite sides of the orange middle line with equal distance to the line. some examples of how the view can look:
 
-![view example](https://raw.githubusercontent.com/Hans-Jeiger/SpectatorDrones/master/rm_files/gridExamples.JPG?token=ALCTNAEMRLCSN3K66BZXN6S6W7BTC)
+![view example](https://github.com/Hans-Jeiger/SpectatorDrones/blob/master/rm_files/gridExamples.JPG?raw=true)
 
 
 Inside the Drone Controller blueprint, there are two functions that should be customized for each project: *Calculate Midpoint of POIs* and *Calculate View Value*.
