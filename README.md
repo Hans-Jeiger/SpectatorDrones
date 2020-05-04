@@ -1,6 +1,6 @@
 # SpectatorDrones
 
-An Unreal Engine plugin providing a system of camera drones for spectating in games. Made to be pleasing for the eyeballs :-)
+An Unreal Engine plugin providing a system of camera drones for spectating in games with a focus on camera composition. The drones have the ability to align itself to put different subjects in visual compositions similar to Rule of Thirds.
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ An Unreal Engine plugin providing a system of camera drones for spectating in ga
 
 ### Prerequisites
 
-to utilize this Unreal Engine plugin, you need to have installed Unreal Engine. Yes, really.
+to utilize this Unreal Engine plugin, you need to have installed Unreal Engine.
 
 (Download link: https://www.unrealengine.com/en-US/get-now)
 
@@ -83,6 +83,8 @@ This function is meant to be customizable to fit your project. some consideratio
 * What kind of subject POI are you prioritizing for? (If you have made several different children of BP_POI_Subject)
 * Make sure to remove the POI from a subjects array when it does not fulfill the criteria for prioritization anymore.
 
+The Drone Master also controls how many drones currently exist. You can spawn them with the SpawnDrone function, and destroy them with the DestroyDrone function.
+
 #### Making a custom POI
 
 When you need to make a custom POI, you right click the appropriate POI blueprint and choose *"Create child blueprint class"*. You can fill this in with any variables and functionality you need. However, you need to make some changes in the BP_DroneMaster blueprint:
@@ -104,5 +106,28 @@ This represents the camera view of the drone. In this example, we utilize a 3x3 
 
 Inside the Drone Controller blueprint, there are two functions that should be customized for each project: *Calculate Midpoint of POIs* and *Calculate View Value*.
 
+#### Calculate Midpoint of POIs
 
+This function calculates the midpoint which the drone will attempt to keep in frame (described over). As it is now, it calculates the midpoint between all the Subject POIs prioritized by the drone's assigned POI. If it has no Subject POIs prioritized, it sets the midpoint a distance in front of the assigned POI. 
+
+Some considerations to make when customizing this function:
+
+* Do you want the drone to orient towards a single actor at a time?
+  * You can set the midpoint to the location of that actor's POI.
+* Do you want to try to capture many actors at the same time?
+  * Calculate the midpoint of all the actor's POIs.
+* Do you want specific POIs to affect the midpoint differently?
+  * Make different macros / functions for calculating how much the POI pulls the midpoint to itself.
+
+#### Calculate View Value
+
+This function calculates a View Value based on which POIs the drone is currently filming. If you have several drones in the same area, you can use this to find out which drone currently has the "best view" (as in, which drone has the highest value).
+
+Some considerations to make when customizing this function:
+
+* Do you only use one drone at a time?
+* Will different types of POIs influence the View Value differently?
+  * You can set the Value variable of the POI to different values and base their influence on the View Value of the drone based on this. 
+* Will the POIs not affect the View Value when they are obscured?
+  * You can line trace to them and exclude them from the calculation if the line trace is true.
 
