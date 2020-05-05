@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"FileVersion": 3,
 	"Version": 1,
@@ -14,4 +15,22 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": true
+=======
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "3.4",
+	"FriendlyName": "SpectatorDrones",
+	"Description": "Drones for spectating",
+	"Category": "Other",
+	"CreatedBy": "DroneBoyz",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true
+>>>>>>> 9a32cab7504d720f869aa4b5d7c9f93ec9f5de94
 }
