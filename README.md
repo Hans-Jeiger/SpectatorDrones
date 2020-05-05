@@ -21,10 +21,9 @@ As the plugin is now, it works in 3d projects where there is sufficient open spa
 
 ### Installing
 
-In the root folder of your Unreal Engine project, move to the Plugins folder. 
-(If there is no Plugins folder, you can just create a folder named "Plugins".)
+Open your Unreal Engine project in the editor. In the top left bar, go to "Edit", and then "Plugins". In the bottom right corner of the Plugins tab, click "New Plugin". Choose "Content Only".Name the plugin whatever you want, then click "Create Plugin". Now exit the editor.
 
-Within the Plugins folder, clone this repository:
+Locate your project in the explorer, and enter the Plugins folder. Here, you should see a folder for the plugin you created. Enter the folder and remove all the content from it. Then, inside the now empty folder, clone this project: 
 
 ```
 git clone https://github.com/Hans-Jeiger/SpectatorDrones.git
