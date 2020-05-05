@@ -1,11 +1,11 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "drone",
-	"Description": "",
+	"VersionName": "3.4",
+	"FriendlyName": "SpectatorDrones",
+	"Description": "Drones for spectating",
 	"Category": "Other",
-	"CreatedBy": "",
+	"CreatedBy": "DroneBoyz",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"MarketplaceURL": "",
@@ -13,5 +13,5 @@
 	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
-	"Installed": false
+	"Installed": true
 }
