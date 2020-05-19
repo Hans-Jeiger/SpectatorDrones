@@ -21,9 +21,7 @@ As the plugin is now, it works in 3d projects where there is sufficient open spa
 
 ### Installing
 
-Open your Unreal Engine project in the editor. In the top left bar, go to "Edit", and then "Plugins". In the bottom right corner of the Plugins tab, click "New Plugin". Choose "Content Only".Name the plugin whatever you want, then click "Create Plugin". Now exit the editor.
-
-Locate your project in the explorer, and enter the Plugins folder. Here, you should see a folder for the plugin you created. Enter the folder and remove all the content from it. Then, inside the now empty folder, clone this project: 
+Locate the root directory of your project in your explorer, and enter the Plugins folder. If it does not exist, make a new folder named "Plugins" in the root directory. clone this project within this folder: 
 
 ```
 git clone https://github.com/Hans-Jeiger/SpectatorDrones.git
@@ -32,6 +30,9 @@ git clone https://github.com/Hans-Jeiger/SpectatorDrones.git
 The plugin will now be available in your Unreal Engine project next time you open it. You can find it by clicking on the folder icon in your content browser and locating drone Content:
 
 ![How to locate the plugin within your project](https://github.com/Hans-Jeiger/SpectatorDrones/blob/master/rm_files/readme%20guide%20image.png?raw=true)
+
+If it has not appeared by now, post an issue here and we will get back to you. 
+It might appear if you create a new "Content Only" plugin in your project while in the UE4 editor.
 
 ### Simple implementation
 
