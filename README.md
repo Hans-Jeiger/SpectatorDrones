@@ -1,6 +1,6 @@
 # SpectatorDrones
 
-An Unreal Engine plugin providing a system of camera drones for spectating in games with a focus on camera composition. The drones have the ability to align itself to put different subjects in visual compositions similar to Rule of Thirds.
+An Unreal Engine plugin providing a system of camera drones for spectating in games with a focus on camera composition and coverage of many dynamic points of interest. The drones have the ability to align itself to put different points in visual compositions such as Rule of Thirds.
 
 ## Getting Started
 
