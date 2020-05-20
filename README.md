@@ -11,9 +11,11 @@ An Unreal Engine plugin providing a system of camera drones for spectating in ga
 
 ### Prerequisites
 
-to utilize this Unreal Engine plugin, you need to have installed Unreal Engine.
+to utilize this Unreal Engine plugin, you need to have installed Unreal Engine as well as Visual Studio.
 
-(Download link: https://www.unrealengine.com/en-US/get-now)
+(Download link Unreal Engine: https://www.unrealengine.com/en-US/get-now)
+(Download link Visual Studio: https://visualstudio.microsoft.com/downloads/)
+
 
 #### Limitations
 
